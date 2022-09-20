@@ -10,3 +10,11 @@ let tasks = [
 ];
 
 //your code here
+var tareasSinTerminar=tasks.filter(function(tarea){
+	console.log(tarea.done)
+	if(tarea.done==false){
+		return tarea;
+	}
+});
+
+console.log(tareasSinTerminar)
